@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Sorted values test",
+      "setup": "",
+      "run": "python median.py",
+      "input": "1,2,3,4,5",
+      "output": "^(.|\\n)*3\\.0\\s*\\n?$",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Five value test",
+      "setup": "",
+      "run": "python median.py",
+      "input": "8,789,2,9,391",
+      "output": "^(.|\\n)*9\\.0\\s*\\n?$",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Eight value test",
+      "setup": "",
+      "run": "python median.py",
+      "input": "6,7,9,4658,2365,1,1,1",
+      "output": "^(.|\\n)*6\\.5\\s*\\n?$",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Ten value test",
+      "setup": "",
+      "run": "python median.py",
+      "input": "2,2,2,9,9,9,9,2,2,2",
+      "output": "^(.|\\n)*2\\.0\\s*\\n?$",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Single value test",
+      "setup": "",
+      "run": "python median.py",
+      "input": "3",
+      "output": "^(.|\\n)*3\\.0\\s*\\n?$",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
